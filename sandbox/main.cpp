@@ -19,8 +19,9 @@ int main()
 	//Matrix4x4 mat(1.0f);
 
 		std::cout << "Hello, Sandbox!" << std::endl;
-		std::cout << mat3.ToString() << std::endl;
-		std::cout << a.ToString() << " + " << b.ToString() << " = " << c.ToString() << std::endl;
+		std::cout << mat3.ToString() << "\n" << std::endl;
+		//std::cout << a.ToString() << " + " << b.ToString() << " = " << c.ToString() << std::endl;
+		std::cout << Transpose(mat3).ToString() << std::endl;
 		//std::cout << mat.m << std::endl;
 
 	return 0;

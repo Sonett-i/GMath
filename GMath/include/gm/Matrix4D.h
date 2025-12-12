@@ -34,6 +34,13 @@ namespace gm
 		const Vector3D& b = reinterpret_cast<const Vector3D&>(M[1]);
 		const Vector3D& c = reinterpret_cast<const Vector3D&>(M[2]);
 		const Vector3D& d = reinterpret_cast<const Vector3D&>(M[3]);
+	}
 
+	Matrix4D Identity()
+	{
+		return (Matrix4D(1.0f, 0.0f, 0.0f, 0.0f,
+						 0.0f, 1.0f, 0.0f, 0.0f,
+						 0.0f, 0.0f, 1.0f, 0.0f,
+						 0.0f, 0.0f, 0.0f, 1.0f));
 	}
 }

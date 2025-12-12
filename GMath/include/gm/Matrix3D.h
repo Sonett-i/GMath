@@ -86,6 +86,20 @@ namespace gm
 			+ M(0, 2) * (M(1, 0) * M(2, 1) - M(1, 1) * M(2, 0));
 	}
 
+	Matrix3D Transpose(const Matrix3D& M)
+	{
+		return (Matrix3D(M(0, 0), M(1, 0), M(2, 0),
+						M(0, 1), M(1, 1), M(2, 1),
+						M(0, 2), M(1, 2), M(2, 2)));
+	}
+
+	Matrix3D Identity()
+	{
+		return (Matrix3D(1.0f, 0.0f, 0.0f,
+						0.0f, 1.0f, 0.0f,
+						0.0f, 0.0f, 1.0f));
+	}
+
 	Matrix3D Inverse(const Matrix3D& M)
 	{
 		const Vector3D& a = M[0];
